@@ -25,13 +25,13 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            pip install -r requirements.txt
+            cd .. && pip install -r requirements.txt
 
       # run tests!
       - run:
           name: run tests
           command: |
-            behave features/searchProduct.feature 
+            cd .. && behave features/searchProduct.feature 
 
       - store_artifacts:
           path: test-reports
