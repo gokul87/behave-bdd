@@ -20,14 +20,11 @@ jobs:
       - run: mkdir test-reports
       - run: pwd
       - run: ls
-      - run: pip install -r requirements.txt
       # Install dependencies for the project
-      #- run:
-      #    name: install dependencies
-      #    command: |
-      #      python3 -m venv venv
-      #      . venv/bin/activate
-      #      pip install -r requirements.txt
+      - run:
+          name: install dependencies
+          command: |
+            pip install -r requirements.text
 
       # run tests!
       - run:
