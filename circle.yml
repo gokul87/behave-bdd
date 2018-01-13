@@ -24,7 +24,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            pip install -r requirements.text
+            sudo pip install -r requirements.text
 
       # run tests!
       - run:
