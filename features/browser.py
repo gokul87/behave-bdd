@@ -6,7 +6,7 @@ class Browser(object):
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("headless")
     chrome_options.add_argument("window-size=1200x600")
-    driver = webdriver.Chrome(executable_path='./drivers/chromedriver_old',
+    driver = webdriver.Chrome(executable_path='./drivers/chromedriver_new',
                               chrome_options=chrome_options)
 
 
